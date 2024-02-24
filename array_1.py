@@ -1,4 +1,7 @@
 # Function to perform binary search on a sorted array
+# In this file, I have been able to find an element from the given array through binary search 
+#Time complexity: O(log(n))
+#Space complexity: O(1)
 def binarysearch(arr, N, K):
   # Initialize low and high pointers
   low = 0
