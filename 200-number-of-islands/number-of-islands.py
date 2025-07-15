@@ -4,11 +4,6 @@ class Solution:
         if not grid:
             return 0
 
-        rlen = len(grid)
-        clen = len(grid[0])
-        visited = set()
-        islands = 0
-
         def bfs(row, col):
             q = deque()
             q.append((row, col))
@@ -23,6 +18,11 @@ class Solution:
                         q.append((r,c))
                         visited.add((r,c))
 
+        rlen = len(grid)
+        clen = len(grid[0])
+        visited = set()
+        islands = 0
+        
         for i in range(rlen):
             for j in range(clen):
                 if grid[i][j] == '1' and (i,j) not in visited:
