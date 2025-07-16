@@ -4,11 +4,9 @@ class Solution:
         Do not return anything, modify s in-place instead.
         """
         i,j = 0, len(s)-1
-        t = 0
-        while j>= len(s)//2 and i<len(s)//2:
-            t = s[i]
-            s[i] = s[j]
-            s[j] = t
-            i+=1
-            j-=1
+        while i<j:
+            s[i], s[j] = s[j], s[i]
+            i +=1
+            j -=1
+            
         
