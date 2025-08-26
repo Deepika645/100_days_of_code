@@ -1,8 +1,8 @@
 class Solution:
     def minimumAbsDifference(self, arr: List[int]) -> List[List[int]]:
         n = len(arr)
-        if n<2:
-            return 0
+        # if n<2:
+        #     return 0
         arr.sort()
         min_d = float(inf)
         arr2 = []
