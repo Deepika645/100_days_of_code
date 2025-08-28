@@ -3,20 +3,17 @@ class Solution:
         n = len(nums)
         i = 0
         min_l = float("inf")
-        sum = nums[i]
-        if sum>= target:
-            return 1
-        for j in range(1,n):
-            sum += nums[j]
-            while sum>= target:
-                min_l = min(min_l, j-i+1)
-                sum-=nums[i]
-                i+=1
-            
-        if min_l<float("inf"):
-            return min_l
-        else:
-            return 0 
+        curr_sum = 0
+        
+        for j in range(n):
+            curr_sum += nums[j]
+            while curr_sum >= target:
+                min_l = min(min_l, j - i + 1)
+                curr_sum -= nums[i]
+                i += 1
+        
+        return 0 if min_l == float("inf") else min_l
+
 
 
             
