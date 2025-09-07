@@ -6,9 +6,9 @@ class Solution:
         for j in range(len(nums)):
             summ += nums[j]
             max_sum = max(max_sum, summ)
-            while summ < 0:
-                summ -= nums[i]
-                i += 1
+            if summ < 0:
+                summ = 0
+            
             
         return max_sum
                 
