@@ -1,1 +1,1 @@
-<h2>house-robber Notes</h2><hr>[ Time taken: 24 m 23 s ]
+<h2>house-robber Notes</h2><hr>[ Time taken: 26 m 1 s ]
